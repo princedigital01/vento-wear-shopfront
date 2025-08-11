@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
+import SiteMap from "./pages/SiteMap";
+
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="contact" element={<Contact />} />
             <Route path="cart" element={<Cart />} />
             <Route path="checkout" element={<Checkout />} />
+            <Route path="sitemap.xml" element={<SiteMap />} />
+
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

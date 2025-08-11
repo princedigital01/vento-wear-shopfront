@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
     
-    --primary: 0 0% 0%;               /* Pure Black */
+    --primary: 46, 92%, 36%;               /* Pure Black */
     --primary-foreground: 0 0% 100%;  /* Pure White */
     
     --secondary: 0 0% 96%;            /* Light Gray #F5F5F5 */
@@ -81,15 +81,18 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
+  body{
+    background: hsl(46, 92%, 36%);
+  }
+  .darkd {
     /* Keep light theme for VentoWear - minimal and clean */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
-    --primary: 0 0% 0%;
+    --primary: 46, 89%, 44%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 0%;
@@ -104,6 +107,8 @@ All colors MUST be HSL.
     --ring: 0 0% 0%;
   }
 }
+
+
 
 @layer base {
   * {

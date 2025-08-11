@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Phone } from "lucide-react";
+import map from "@/assets/map.jpg"
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -130,14 +131,11 @@ const Contact = () => {
             </Card>
 
             {/* Map Placeholder */}
-            <Card className="vento-card">
-              <CardContent className="p-0">
-                <div className="h-64 bg-secondary/40 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-muted-foreground">Interactive map coming soon</p>
-                  </div>
-                </div>
+            <Card className="vento-card overflow-hidden">
+              <CardContent className="p-0 h-64">
+           
+                    <img src={map} alt="" className="w-full " />
+                 
               </CardContent>
             </Card>
 
