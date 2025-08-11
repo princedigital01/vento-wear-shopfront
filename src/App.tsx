@@ -30,7 +30,6 @@ const App = () => (
             <Route path="contact" element={<Contact />} />
             <Route path="cart" element={<Cart />} />
             <Route path="checkout" element={<Checkout />} />
-            <Route path="sitemap.xml" element={<SiteMap />} />
 
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
